@@ -6,11 +6,14 @@
 <div style="color:blue;">hello world, scott</div> -->
 
 <div class="colorful-text">
-<!-- <div class="colorful-text">hello world, {{ name }}</div>
-<div class="colorful-text">hello world, joe</div>
-<div class="colorful-text">hello world, scott</div> -->
-<div >hello world, {{ name }}</div>
-<div >hello world, joe</div>
-<div >hello world, scott</div>
+  <!-- <div class="colorful-text">hello world, {{ name }}</div>
+  <div class="colorful-text">hello world, joe</div>
+  <div class="colorful-text">hello world, scott</div> -->
+  <!-- <div >hello world, {{ name }}</div> -->
+  <div >hello world, joe</div>
+  <div >hello world, scott</div>
+  {% for article in article_list %}
+    <div>{{ article.title }}</div>
+  {% endfor %}
 </div>
 {% endblock %}
